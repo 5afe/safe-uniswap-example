@@ -1,0 +1,27 @@
+{
+  "name": "safe-swap",
+  "version": "1.0.0",
+  "description": "```bash anvil --fork-url https://mainnet.chainnodes.org/fdb383b3-a6d8-4d4c-8ca6-337c551ba456 --fork-block-number 17480237 --fork-chain-id 1 --chain-id 1 ```",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "setup-safe": "ts-node src/setupSafe.ts",
+    "swap": "ts-node src/swap.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^22.10.7",
+    "dotenv": "^16.4.7",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.3"
+  },
+  "dependencies": {
+    "@safe-global/protocol-kit": "^5.2.0",
+    "@safe-global/safe-deployments": "^1.37.24",
+    "@safe-global/safe-modules-deployments": "^2.2.4",
+    "@uniswap/v3-sdk": "^3.22.0",
+    "viem": "^2.22.11"
+  }
+}
